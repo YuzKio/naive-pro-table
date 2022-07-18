@@ -19,6 +19,7 @@ function getCheckboxAndButton(wrapper: VueWrapper) {
   const operateButton = wrapper.findAllComponents(NButton)
   const cancelButton = operateButton[0]
   const confirmButton = operateButton[1]
+  console.log(111111)
   return {
     checkbox,
     cancelButton,
