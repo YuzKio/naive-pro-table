@@ -138,7 +138,7 @@ watch(props.columns, () => {
 })
 
 const {
-  handleInitSortQuery,
+  handleInitQuery,
   handleSortChange,
   handleFilterChange,
   handlePageChange,
@@ -176,7 +176,7 @@ paramsStoreRef.value.initQuery(
   syncFromRouter(props.queryPrefix),
   mergedPagination
 )
-handleInitSortQuery(paramsStoreRef.value)
+handleInitQuery(paramsStoreRef.value)
 
 onMounted(() => {
   handleFetchTableData()
